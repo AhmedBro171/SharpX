@@ -2,7 +2,7 @@ import Random-Gen
 
 def parse_opcode(opcode):
 	# Here we check the opcode from a list.
-	opcodes = ['stdout.print', 'stdin.input']
+	opcodes = ['stdout.print', 'stdin.input', 'random']
 	code = opcode.split()[0]
 	argument = opcode.split()[1]
 	
@@ -14,4 +14,5 @@ def parse_opcode(opcode):
 				inp = input(argument)
 				return inp
 			if opc == 'random':
-				Random-Gen.
+				return Random-Gen.Generate()
+			
