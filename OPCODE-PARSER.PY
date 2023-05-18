@@ -1,3 +1,5 @@
+import Random-Gen
+
 def parse_opcode(opcode):
 	# Here we check the opcode from a list.
 	opcodes = ['stdout.print', 'stdin.input']
@@ -11,3 +13,5 @@ def parse_opcode(opcode):
 			if opc == 'stdin.input':
 				inp = input(argument)
 				return inp
+			if opc == 'random':
+				Random-Gen.
