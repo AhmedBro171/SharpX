@@ -4,5 +4,4 @@ import OPCODE-PARSER
 
 while true:
   userinput = input("> ")
-  
-  print(userinput)
+  result = parse_opcode(userinput)
