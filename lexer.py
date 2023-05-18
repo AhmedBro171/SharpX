@@ -6,7 +6,7 @@ class Lexer:
   def advance():
     self.pos += 1
     self.char = self.code[self.pos]
-  # will finish this later or someone finish it if wants
-  # the tokenize() function
+  # will finish this later or someone finish it if wants to
+  # tokenize() function
 
 
