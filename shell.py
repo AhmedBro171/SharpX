@@ -1,7 +1,7 @@
 # Edited by happen3 to integrate the modules.
 
-import OPCODE-PARSER
+import OPCODEPARSER
 
 while true:
   userinput = input("> ")
-  result = parse_opcode(userinput)
+  result = OPCODE-PARSER.parse_opcode(userinput)
