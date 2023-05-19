@@ -10,12 +10,16 @@ class FileSystemObject:
       if self.typeof == 'rb' or 'r':
         self.Data = self.OpenFile.read()
         return self.Data
+  def delete(file):
+    os.remove(self.file)
+  def copy(file1, file2):
+    os.cp(file1, file2)
 
-  # I will finish that tommorow, unless someone edits it before, in case. Here is the meaning of this : 
+  # I will finish that later, unless someone edits it before, in case. Here is the meaning of this : 
   """
   Interacting with Filesystem.
   Future functions :
-  - delete
-  - move
-  - copy
+  - delete (X)
+  - move 
+  - copy (X)
   """
