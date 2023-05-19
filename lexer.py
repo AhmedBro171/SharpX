@@ -15,11 +15,15 @@ class Lexer:
   	while self.char != None:
   		if self.char == "+":
   			tokens.push(token.Token(token.TokenType.plus))
-  		if self.char == "-":
+  		elif self.char == "-":
   			tokens.push(token.Token(token.TokenType.minus))
-  		if self.char == "*":
+  		elif self.char == "*":
   			tokens.push(token.Token(token.TokenType.multiply))
-  		if self.char == "/":
+  		elif self.char == "/":
   			tokens.push(token.Token(token.TokenType.divide))
+      else:
+        char = self.char
+        self.advance()
+        return None, UndefinedCharError("'" + char + "'")
 
-  	return tokens
+  	return tokens, None
