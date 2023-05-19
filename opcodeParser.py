@@ -1,4 +1,4 @@
-import Random-Gen
+import randomGen
 
 def parse_opcode(opcode):
 	# Here we check the opcode from a list.
@@ -14,5 +14,5 @@ def parse_opcode(opcode):
 				inp = input(argument)
 				return inp
 			if opc == 'random':
-				return Random-Gen.Generate()
+				return randomGen.Generate()
 			
