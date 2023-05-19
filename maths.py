@@ -19,5 +19,8 @@ def sub(num, num2):
 def mult(nul1, m):
 	m_op = str(int(nul1 * m))
 	return m_op
+def div(num1, num2):
+	div_op = str(float(num1 / num2))
+	return div_op
 
 # I will continue tomorrow.
