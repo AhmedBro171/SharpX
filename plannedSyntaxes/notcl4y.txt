@@ -1,0 +1,5 @@
+let x:number = 5;
+var x:number = 4;
+var z = x + y;
+
+console.out.writeln(z);

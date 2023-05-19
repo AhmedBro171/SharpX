@@ -1,0 +1,3 @@
+def main <args:: ARG1 ARG2>>:void {
+  stdout.print :> "Hello World!" <:
+}
