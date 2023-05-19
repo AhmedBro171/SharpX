@@ -1,4 +1,5 @@
 import token
+import error
 
 class Lexer:
   def __init__(self, code):
@@ -24,6 +25,6 @@ class Lexer:
       else:
         char = self.char
         self.advance()
-        return None, UndefinedCharError("'" + char + "'")
+        return None, error.UndefinedCharError("'" + char + "'")
 
   	return tokens, None
