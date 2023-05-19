@@ -6,13 +6,16 @@ def parse_opcode(opcode):
 	code = opcode.split()[0]
 	argument = opcode.split()[1]
 	
+	c = 0
+	
 	for opc in opcodes:
+		c =+ 1
 		if code == opc:
-			if opc == 'stdout.print':
+			if opc == opcodes[c]:
 				print(argument)
-			if opc == 'stdin.input':
+			if opc == opcodes[c]:
 				inp = input(argument)
 				return inp
-			if opc == 'random':
+			if opc == opcodes[c]:
 				return randomGen.Generate()
 			
